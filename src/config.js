@@ -6,15 +6,13 @@ import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDI-zE6lb4Ilx5Rie6ZnnA2nvZj0lF3IZQ",
-  authDomain: "karina-sandbox.firebaseapp.com",
-  projectId: "karina-sandbox",
-  storageBucket: "karina-sandbox.firebasestorage.app",
-  messagingSenderId: "426516732748",
-  appId: "1:426516732748:web:bfdbf9643248307f390de9",
-  measurementId: "G-Y2C8KFYVVY"
+  apiKey: "AIzaSyBsB5J08V6IRC97xTO5pxXu2AkBTzipulA",
+  authDomain: "rivera-sandbox.firebaseapp.com",
+  projectId: "rivera-sandbox",
+  storageBucket: "rivera-sandbox.firebasestorage.app",
+  messagingSenderId: "383237436085",
+  appId: "1:383237436085:web:8c99fee631ffcd9101c4fc"
 };
 
 // Initialize Firebase
