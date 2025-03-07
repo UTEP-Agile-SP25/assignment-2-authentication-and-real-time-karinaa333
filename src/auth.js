@@ -18,6 +18,7 @@ async function fetchUserData(userID) {
         const userDoc = await getDocs(collection(db, "users"))
         const userData = userDoc.docs.find(doc => doc.id===userID)?.data()
         console.log("User data: ", userData)
+        document.getElementById("greeting").innerHTML = "<h1> Hi, " + userData.firstname +"</h1"
     }catch(error) {
         console.log("Error getting user data: ", error)
     }
