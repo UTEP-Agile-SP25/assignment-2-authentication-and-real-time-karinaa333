@@ -25,8 +25,24 @@ const saveCity = async function() {
     }
 }
 
-const addCity = document.querySelector("#addCity")
-addCity.addEventListener("submit", (event)=> {
+const deleteCity = async function(collection, docID) {
+    try {
+        await deleteDoc(doc(db, collection, docID))
+        console.log(`Document with ID ${docID} deleted successfully`)
+    }catch(error) {
+        console.error("Error deleting city ", error)
+    }
+}
+
+const addCityForm = document.querySelector("#addCity")
+addCityForm.addEventListener("submit", (event)=> {
     event.preventDefault()
     saveCity()
+})
+
+const deleteCityForm = document.querySelector("#deleteCity")
+deleteCityForm.addEventListener("submit", (event)=>{
+    event.preventDefault()
+    const city = document.getElementById("cityID").value
+    deleteCity("cities",city)
 })
